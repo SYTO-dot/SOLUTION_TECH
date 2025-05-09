@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ✅ Add Font Awesome here -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-yhXrQlMjJ2MHZVXbsw4+CXU5hzZMuF2+6biPxZSSNzhKPJYXzUM+4jEu8h9t3/1Ah5MPxS5jBF8iQGZCFdMmcA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <title>SOLTECH</title>
+  <link rel="icon" href="assets/ST_logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #e0dde6;
+      color: #71a77e;
+    }
+
+    header, section, footer {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header {
+  position: relative;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0,0,0,0.0)),
+    url('assets/Download Free Vectors, Images, Photos & Videos _ Vecteezy.jpeg') no-repeat center center / cover;
+  padding: 70px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust transparency here */
+  z-index: 1;
+}
+
+.header-wrapper {
+  position: relative; /* Ensure it's above the overlay */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  animation: fadeIn 2.0s ease-in-out;
+}
+
+    header img {
+      width: 200px;
+      height: 120px;
+      border-radius: 20px;
+      background: transparent;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    .logo-text {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin: 0 auto 10px;
+      color: #007bff;
+    }
+
+    header p {
+      font-size: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #ecac17;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .contact a {
+      font-size: 18px;
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #060505;
+      color: #ccc;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #695897;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700;900&display=swap" rel="stylesheet">
+        <style>
+          body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+          }
+      
+          header {
+            background: url('assets/049b3359-6f7b-4aaa-83bc-74ae3247b651.jpeg') no-repeat center center / cover;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            
+          }
+      
+          .header-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            animation: fadeIn 1.5s ease-in-out;
+          }
+      
+          .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+      
+          .logo-title img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: white;
+            padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+          }
+      
+          .logo-title img:hover {
+            transform: scale(1.1);
+          }
+      
+          .logo-title h1 {
+            font-size: 64px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 3px;
+          }
+      
+          .logo-title h1 span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+          }
+      
+          .logo-title h1 span:hover {
+            transform: scale(1.05);
+          }
+      
+          .tagline {
+            font-size: 40px;
+            font-weight: 550;
+            color: #f1e8e8;
+            margin-top: 10px;
+          }
+      
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+      
+          @media (max-width: 768px) {
+            .logo-title h1 {
+              font-size: 40px;
+              letter-spacing: 2px;
+            }
+      
+            .tagline {
+              font-size: 22px;
+              padding: 0 10px;
+            }
+      
+            .logo-title img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <div class="header-wrapper">
+            <div class="logo-title">
+              <img src="assets/ST_logo.png" alt="Logo">
+              <h1>
+                <span style="color: #3991d5;">Solution</span>
+                <span style="color: #ffffff;">Tech</span>
+                <span style="color: #000000; background: rgba(255,255,255,0.85); padding: 0 10px; border-radius: 4px;">Hub</span>
+              </h1>
+            </div>
+            <p class="tagline">Your shop for Tools, Laptops, Phones, Fashion & More</p>
+          </div>
+        </header>
+      </body>
+          
+</body> 
+
+<section style="
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0,0,0,0)),
+  url('assets/woman-working-floor-from-home-with-device.jpg') no-repeat center center / cover;
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+">
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  "></div>
+
+  <h2 style="
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  ">
+    🛠️ Digital Tools & Services
+  </h2>
+
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  ">
+
+    <!-- PDF Tool -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/PDF Tool Icon Design.png" alt="PDF Tool Icon" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">PDF Merge & Split Tool</h3>
+      <p style="font-size: 13px;">Merge or split PDFs offline with ease.</p>
+      <a href="#" style="
+        display: inline-block;
+        margin-top: 8px;
+        background: #007bff;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+      ">Download Now</a>
+    </div>
+
+    <!-- Translator Tool -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/promo_image.png" alt="Translator Promo" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">Offline Translator</h3>
+      <p style="font-size: 13px;">Translate documents without internet.</p>
+      <a href="#" style="
+        display: inline-block;
+        margin-top: 8px;
+        background: #007bff;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+      ">Download Now</a>
+    </div>
+
+    <!-- Laptop Repair -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/Dell Precision Mobile Workstations _ Dell USA.jpeg" alt="Laptop Repair" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">Laptop Repairs</h3>
+      <p style="font-size: 13px;">Fix your laptop issues with professional help.</p>
+      <a href="#" style="
+        display: inline-block;
+        margin-top: 8px;
+        background: #28a745;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+      ">Book now</a>
+    </div>
+
+    <!-- Laptop Accessories -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/best prices online.jpeg" alt="Laptop Accessories" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">Laptop Accessories</h3>
+      <p style="font-size: 13px;">Find top laptop accessories at great prices.</p>
+      <a href="#" style="
+        display: inline-block;
+        margin-top: 8px;
+        background: #28a745;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+      ">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Media Queries for responsiveness -->
+<style>
+  @media (min-width: 768px) {
+    .tools-wrapper {
+      gap: 30px;
+    }
+    .tool-card {
+      max-width: 300px !important;
+      padding: 24px 18px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tool-card h3 {
+      font-size: 18px !important;
+    }
+    .tool-card p {
+      font-size: 12px !important;
+    }
+    .tool-card a {
+      font-size: 13px !important;
+      padding: 7px 12px !important;
+    }
+  }
+</style>
+
+<section style="
+  background: url('assets/Uk Used Laptop Computers At Affordable Prices.jpeg') no-repeat center center / cover;
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+">
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  "></div>
+
+  <h2 style="
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  ">
+    📱 Phones & 💻 Laptops
+  </h2>
+
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  ">
+
+    <!-- Reusable Product Card -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+
+      <img src="assets/Two MacBook Air M2 Silver Mockup.jpeg" alt="Laptop 1" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">MacBook Deals</h3>
+      <a href="#" style="
+        display: inline-block;
+        margin-top: 8px;
+        background: #007bff;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+      ">Order Now</a>
+    </div>
+
+    <div style=" /* Copy for each item */ background: rgba(255, 255, 255, 0.95); border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); padding: 16px; width: 20%; min-width: 180px; transition: transform 0.3s ease; color: #222; font-size: 14px;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/305deaed-15a0-4fed-a3ec-8593b843cb50.jpeg" alt="Laptop 2" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">UK Used Laptops</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #007bff; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Shop Now</a>
+    </div>
+
+    <div style="background: rgba(255, 255, 255, 0.95); border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); padding: 16px; width: 20%; min-width: 180px; transition: transform 0.3s ease; color: #222; font-size: 14px;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/c8a4e98d-a62b-417d-b702-11df66d6da99.jpeg" alt="Phone 1" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">iPhone Deals</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #28a745; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Buy Now</a>
+    </div>
+
+    <div style="background: rgba(255, 255, 255, 0.95); border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); padding: 16px; width: 20%; min-width: 180px; transition: transform 0.3s ease; color: #222; font-size: 14px;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/48d2cdd2-1cdc-43a7-8b56-197ac3a4a274.jpeg" alt="Phone 2" style="width: 100%; border-radius: 6px;" />
+      <h3 style="margin-top: 8px; font-size: 16px;">Samsung Phones</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #28a745; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Buy Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section style="
+  background: url('assets/80634c3b-b546-4a73-aeb6-7035e40bc27f.jpeg') no-repeat center center / cover;
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+">
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  "></div>
+
+  <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 30px; text-transform: uppercase;">
+    👕 Fashion Picks
+  </h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+
+    <!-- Card 1: Sneakers -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/Category_Sneakers; Upper Materials_PU… (1).jpeg" alt="Sneakers" style="width: 100%; border-radius: 6px;">
+      <h3 style="margin-top: 8px; font-size: 16px;">Trendy Sneakers</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #ff4500; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Shop Now</a>
+    </div>
+
+    <!-- Card 2: Native Wear -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/Category_Hoodie; Season_Spring   Fall….jpeg" alt="Native Wear" style="width: 100%; border-radius: 6px;">
+      <h3 style="margin-top: 8px; font-size: 16px;">Native Wear (Custom)</h3>
+      <a href="https://wa.me/234XXXXXXXXXX" target="_blank" style="display: inline-block; margin-top: 8px; background: #25D366; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Order on WhatsApp</a>
+    </div>
+
+    <!-- Card 3: Casual Wears -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/Men Short Sleeve Textured Shirt And Shorts Set….jpeg" alt="Casual Wears" style="width: 100%; border-radius: 6px;">
+      <h3 style="margin-top: 8px; font-size: 16px;">Casual Wears</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #6f42c1; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Shop Now</a>
+    </div>
+
+    <!-- Card 4: Fashion Bags -->
+    <div style="
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 20%;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+      color: #222;
+      font-size: 14px;
+    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      <img src="assets/Elegant Artificial Patent Leather Handbag….jpeg" alt="Fashion Bags" style="width: 100%; border-radius: 6px;">
+      <h3 style="margin-top: 8px; font-size: 16px;">Fashion Bags</h3>
+      <a href="#" style="display: inline-block; margin-top: 8px; background: #17a2b8; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 13px;">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+  <!-- Contact Section -->
+  <section
+    class="contact"
+    style="
+      background: url('assets/Pin%20em%20APPLE.jpeg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    "
+  >
+    <h2 style="font-size: 28px; margin-bottom: 15px;">📞 Contact Me</h2>
+    <p style="font-size: 14px; margin-bottom: 25px;">
+      Have questions or ready to order? Send a message directly!
+    </p>
+  
+    <!-- Contact Form -->
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/mblokrya"
+      method="POST"
+      style="max-width: 500px; margin: auto;"
+    >
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: none;"
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: none;"
+      />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+        rows="5"
+        style="width: 100%; padding: 10px; margin-bottom: 12px; border-radius: 6px; border: none;"
+      ></textarea>
+      <input type="text" name="_gotcha" style="display: none" />
+      <button
+        type="submit"
+        style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;"
+      >
+        Send Message
+      </button>
+    </form>
+  
+    <!-- Success Message -->
+    <div
+      id="success-message"
+      style="display: none; margin-top: 15px; color: #28a745; font-size: 14px;"
+    >
+      ✅ Thank you! Your message has been sent.
+    </div>
+  
+    <!-- WhatsApp Contact Button -->
+    <div style="margin-top: 20px;">
+      <a
+        href="https://wa.me/234XXXXXXXXXX"
+        target="_blank"
+        style="color: white; font-size: 16px; text-decoration: none; display: inline-flex; align-items: center; background: #25d366; padding: 10px 15px; border-radius: 30px; font-weight: 500; transition: background 0.3s ease;"
+      >
+        <i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 10px;"></i>
+        WhatsApp
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+    <div class="socials" style="font-size: 30px; margin-top: 10px;">
+      <!-- YouTube -->
+      <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <!-- TikTok -->
+      <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <!-- Instagram -->
+      <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- Twitter -->
+      <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="#" style="margin: 0 15px; color: white; text-decoration: none;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  
+    <p style="font-size: 16px; margin-top: 15px;">© 2025 Engr. Saheed | Built with 💻</p>
+  </footer>
+  
+
+</body>
+</html>
