@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casual_Wears - Solution_Tech</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon1.png" />
+  <link rel="apple-touch-icon" href="assets/favicon1.png" />
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("assets/Uk Used Laptop Computers At Affordable Prices.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      padding: 20px;
+      color: #fff;
+      margin: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75); /* Darker overlay */
+      z-index: -1;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
+      margin-bottom: 25px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .product-card {
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding-bottom: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(255, 153, 0, 0.6);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 8px 0 4px;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .product-card p {
+      padding: 0 8px;
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background: #ff9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 13px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #e68a00;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      .product-card h3 {
+        font-size: 14px;
+      }
+
+      .product-card p {
+        font-size: 11px;
+      }
+
+      .button {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Casual Wears</h2>
+  <div class="products">
+
+    <!-- Product Cards -->
+    <div class="product-card">
+      <img src="assets/HPStream14inches.jpg" alt="HP Stream Laptop">
+      <h3>HP Stream 14"</h3>
+      <p>Intel N4120, 8GB RAM, 64GB eMMC, Win 11</p>
+      <a class="button" href="https://www.amazon.com/dp/B0DC6KMWJS?tag=soltech0e-20" target="_blank" rel="nofollow">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/jlab airpod.jpg" alt="JLab Wireless Headphones">
+      <h3>JLab Wireless Headphones</h3>
+      <p>Bluetooth, 65+ Hours Battery, Multipoint, Type-C</p>
+      <a class="button" href="https://www.amazon.com/dp/B0CGGM1CQ9?tag=soltech0e-20" target="_blank" rel="nofollow">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/Buy UK _ USA used laptop computers at affordable prices with warranty.jpeg" alt="Used Laptop">
+      <h3>Dell Latitude i5</h3>
+      <p>UK Used, 8GB RAM, 256GB SSD, Windows 10 Pro</p>
+      <a class="button" href="https://amzn.to/435xFOo" target="_blank" rel="nofollow">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/hp-elitebook.jpg" alt="HP EliteBook">
+      <h3>HP EliteBook</h3>
+      <p>Intel Core i5, 16GB RAM, 512GB SSD, Win 10</p>
+      <a class="button" href="#" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/macbook-air.jpg" alt="MacBook Air">
+      <h3>MacBook Air 13"</h3>
+      <p>M1 Chip, 8GB RAM, 256GB SSD, macOS</p>
+      <a class="button" href="#" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/lenovo-thinkpad.jpg" alt="Lenovo ThinkPad">
+      <h3>Lenovo ThinkPad X1</h3>
+      <p>Core i7, 16GB RAM, 1TB SSD, Fingerprint</p>
+      <a class="button" href="#" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/macbook-air.jpg" alt="MacBook Air">
+      <h3>MacBook Air 13"</h3>
+      <p>M1 Chip, 8GB RAM, 256GB SSD, macOS</p>
+      <a class="button" href="#" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/lenovo-thinkpad.jpg" alt="Lenovo ThinkPad">
+      <h3>Lenovo ThinkPad X1</h3>
+      <p>Core i7, 16GB RAM, 1TB SSD, Fingerprint</p>
+      <a class="button" href="#" target="_blank">Buy Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
