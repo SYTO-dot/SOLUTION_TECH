@@ -7,43 +7,53 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: url("assets/_ (1).jpeg") no-repeat center center fixed;
+      background-size: cover;
       padding: 20px;
+      color: #fff; /* Make text readable on dark background */
     }
+  
     h2 {
       text-align: center;
-      color: #333;
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
     }
+  
     .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
+  
     .product-card {
       width: 300px;
-      background: #fff;
+      background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       text-align: center;
       padding-bottom: 15px;
     }
+  
     .product-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
+  
     .product-card h3 {
       margin: 10px 0 5px;
       font-size: 18px;
-      color: #222;
+      color: #fff;
     }
+  
     .product-card p {
       padding: 0 10px;
       font-size: 14px;
-      color: #555;
+      color: #ddd;
     }
+  
     .button {
       display: inline-block;
       margin-top: 10px;
@@ -55,6 +65,7 @@
       font-weight: bold;
     }
   </style>
+  
 </head>
 <body>
 
@@ -64,7 +75,7 @@
     
     <!-- Product 1 -->
     <div class="product-card">
-    <img src="https://m.media-amazon.com/images/I/712G5DC8-BL._AC_SL1500_.jpg" alt="HP Stream Laptop" style="max-width: 100%; height: auto;">
+    <img src="assets/HPStream14inches.jpg" alt="HP Stream Laptop" style="max-width: 100%; height: auto;">
     <h3>HP Stream 14"</h3>
     <p>Intel N4120, 8GB RAM, 64GB eMMC, Win 11</p>
     <a class="button" href="https://www.amazon.com/dp/B0DC6KMWJS?tag=soltech0e-20" target="_blank" rel="nofollow">Buy Now</a>
@@ -72,7 +83,7 @@
 
     <!-- Product 2 -->
     <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="JLab Wireless Headphones">
+      <img src="assets/jlab airpod.jpg" alt="JLab Wireless Headphones">
       <h3>JLab Wireless Headphones</h3>
       <p>Bluetooth, 65+ Hours Battery, Multipoint, Type-C</p>
       <a class="button" href="https://www.amazon.com/dp/B0CGGM1CQ9?tag=soltech0e-20" target="_blank" rel="nofollow">Buy Now</a>
