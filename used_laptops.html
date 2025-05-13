@@ -12,6 +12,19 @@
       padding: 20px;
       color: #fff;
       margin: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75); /* Darker overlay */
+      z-index: -1;
     }
 
     h2 {
@@ -29,10 +42,10 @@
     }
 
     .product-card {
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.85);
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
       text-align: center;
       padding-bottom: 12px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -126,7 +139,6 @@
       <a class="button" href="https://amzn.to/435xFOo" target="_blank" rel="nofollow">Buy Now</a>
     </div>
 
-    <!-- More Cards -->
     <div class="product-card">
       <img src="assets/hp-elitebook.jpg" alt="HP EliteBook">
       <h3>HP EliteBook</h3>
@@ -161,7 +173,6 @@
       <p>Core i7, 16GB RAM, 1TB SSD, Fingerprint</p>
       <a class="button" href="#" target="_blank">Buy Now</a>
     </div>
-
 
   </div>
 
