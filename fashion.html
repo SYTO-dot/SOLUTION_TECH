@@ -42,14 +42,14 @@
       color: white;
     }
 
-    /* Card Styling for Casual Wears */
+    /* Product Card Styling */
     .product-card {
       background: rgba(255, 255, 255, 0.95); /* Light background for the card */
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
       width: 80%;
-      max-width: 300px;
+      max-width: 350px;
       margin: 20px auto;
       transition: transform 0.3s ease;
     }
@@ -60,33 +60,26 @@
 
     .product-card img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 8px;
+      height: auto;
+      object-fit: cover;
     }
 
     .product-card h3 {
+      margin-top: 16px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
       margin-top: 8px;
-      font-size: 16px;
     }
 
-    .product-card a {
+    .product-card a.button {
       display: inline-block;
-      margin-top: 8px;
-      background: #6f42c1;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 13px;
-    }
-
-    .product-card a:hover {
-      background: #5a31b1;
-    }
-
-    /* Additional Button Styles */
-    .buy-now-btn {
-      display: inline-block;
-      margin-top: 10px;
+      margin-top: 16px;
       background: #ffc107;
       color: black;
       padding: 10px 20px;
@@ -95,7 +88,31 @@
       font-size: 14px;
     }
 
-    .buy-now-btn:hover {
+    .product-card a.button:hover {
+      background: #ffb300;
+    }
+
+    /* AliExpress Product Image */
+    .affiliate-product img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    /* Button for Affiliate Link */
+    .affiliate-product a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #ffc107;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .affiliate-product a:hover {
       background: #ffb300;
     }
   </style>
@@ -104,18 +121,20 @@
   <main>
     <h2>🔥 Hot Fashion Picks</h2>
 
-    <!-- Card 3: Casual Wears -->
+    <!-- Product Card for Casual Wears -->
     <div class="product-card">
       <img src="assets/Men-Short-Sleeve-Textured-Shirt-And-Shorts-Set.jpeg" alt="Casual Wears">
       <h3>Casual Wears</h3>
-      <a href="fashion.html" style="background: #6f42c1; color: white;">Shop Now</a>
-
-      <!-- Adding the Affiliate Link under the Button -->
-      <a href="https://s.click.aliexpress.com/e/_olrWZ6F" target="_blank">
-        <img src="https://ae01.alicdn.com/kf/S86f6455babfc4911b05669340e7147909.jpg_80x80.jpg" alt="AliExpress Product" />
-      </a>
-      <p><a href="https://s.click.aliexpress.com/e/_olrWZ6F" target="_blank" class="buy-now-btn">Buy on AliExpress</a></p>
+      <p>Perfect for everyday wear. Comfortable and stylish!</p>
+      <!-- Buy on AliExpress Button Linked to AliExpress Affiliate -->
+      <div class="affiliate-product">
+        <a href="https://s.click.aliexpress.com/e/_olrWZ6F" target="_blank" rel="nofollow">
+          <img src="https://ae01.alicdn.com/kf/S86f6455babfc4911b05669340e7147909.jpg_80x80.jpg" alt="AliExpress Product" />
+          Buy on AliExpress
+        </a>
+      </div>
     </div>
+
   </main>
 </body>
 </html>
