@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Page</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body with Background Image and Dark Overlay */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('assets/80634c3b-b546-4a73-aeb6-7035e40bc27f.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+      z-index: 0;
+    }
+
+    /* Main Content Styling */
+    main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    /* Card Styling for Casual Wears */
+    .product-card {
+      background: rgba(255, 255, 255, 0.95); /* Light background for the card */
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 16px;
+      width: 80%;
+      max-width: 300px;
+      margin: 20px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .product-card h3 {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .product-card a {
+      display: inline-block;
+      margin-top: 8px;
+      background: #6f42c1;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .product-card a:hover {
+      background: #5a31b1;
+    }
+
+    /* Additional Button Styles */
+    .buy-now-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #ffc107;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .buy-now-btn:hover {
+      background: #ffb300;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>🔥 Hot Fashion Picks</h2>
+
+    <!-- Card 3: Casual Wears -->
+    <div class="product-card">
+      <img src="assets/Men-Short-Sleeve-Textured-Shirt-And-Shorts-Set.jpeg" alt="Casual Wears">
+      <h3>Casual Wears</h3>
+      <a href="fashion.html" style="background: #6f42c1; color: white;">Shop Now</a>
+
+      <!-- Adding the Affiliate Link under the Button -->
+      <a href="https://s.click.aliexpress.com/e/_olrWZ6F" target="_blank">
+        <img src="https://ae01.alicdn.com/kf/S86f6455babfc4911b05669340e7147909.jpg_80x80.jpg" alt="AliExpress Product" />
+      </a>
+      <p><a href="https://s.click.aliexpress.com/e/_olrWZ6F" target="_blank" class="buy-now-btn">Buy on AliExpress</a></p>
+    </div>
+  </main>
+</body>
+</html>
