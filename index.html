@@ -645,48 +645,52 @@ font-size: 14px;
 
   </div>
 </section>
+
 <!-- Cookie Consent Popup -->
-<div id="cookieConsent" style="
+<div id="cookie-consent" style="
   position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #2d2d2d;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 15px;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
   z-index: 9999;
-  font-family: sans-serif;
-  font-size: 14px;
+  max-width: 600px;
+  width: 90%;
+  display: none;
 ">
-  This website uses cookies to ensure you get the best experience.
+  <p style="font-size: 16px;">We use cookies to enhance your experience. By continuing to visit this site, you agree to our <a href="privacy.html" style="color: #007bff;">Privacy Policy</a> and <a href="terms.html" style="color: #007bff;">Terms of Service</a>.</p>
   <button onclick="acceptCookies()" style="
-    margin-left: 10px;
-    padding: 6px 12px;
-    background: #28a745;
-    border: none;
-    border-radius: 4px;
+    background-color: #007bff;
     color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
   ">Accept</button>
 </div>
 
 <script>
-  function acceptCookies() {
-    document.getElementById('cookieConsent').style.display = 'none';
-    localStorage.setItem('cookiesAccepted', 'true');
+  // Check if cookie consent has already been accepted
+  if (!localStorage.getItem("cookiesAccepted")) {
+    // Show the consent popup
+    document.getElementById("cookie-consent").style.display = "block";
   }
 
-  window.onload = function () {
-    if (localStorage.getItem('cookiesAccepted') === 'true') {
-      document.getElementById('cookieConsent').style.display = 'none';
-    }
-  };
+  // Function to accept cookies
+  function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookie-consent").style.display = "none";
+  }
 </script>
 
-</section>
 
-
-  <!-- Contact Section -->
+<!-- Contact Section -->
   <section
     class="contact"
     style="
